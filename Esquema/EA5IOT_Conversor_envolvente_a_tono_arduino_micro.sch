@@ -1,0 +1,224 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L R R3
+U 1 1 5BA0BDF8
+P 6250 3350
+F 0 "R3" V 6330 3350 50  0000 C CNN
+F 1 "3K3" V 6250 3350 50  0000 C CNN
+F 2 "" V 6180 3350 50  0001 C CNN
+F 3 "" H 6250 3350 50  0001 C CNN
+	1    6250 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L R R1
+U 1 1 5BA0BE53
+P 3850 3100
+F 0 "R1" V 3930 3100 50  0000 C CNN
+F 1 "100K" V 3850 3100 50  0000 C CNN
+F 2 "" V 3780 3100 50  0001 C CNN
+F 3 "" H 3850 3100 50  0001 C CNN
+	1    3850 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 5BA0BF0C
+P 3850 3600
+F 0 "R2" V 3930 3600 50  0000 C CNN
+F 1 "100K" V 3850 3600 50  0000 C CNN
+F 2 "" V 3780 3600 50  0001 C CNN
+F 3 "" H 3850 3600 50  0001 C CNN
+	1    3850 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 5BA0BF77
+P 3500 3350
+F 0 "C1" H 3525 3450 50  0000 L CNN
+F 1 "100nF" H 3525 3250 50  0000 L CNN
+F 2 "" H 3538 3200 50  0001 C CNN
+F 3 "" H 3500 3350 50  0001 C CNN
+	1    3500 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L C C2
+U 1 1 5BA0BFE4
+P 6500 3600
+F 0 "C2" H 6525 3700 50  0000 L CNN
+F 1 "100nF" H 6525 3500 50  0000 L CNN
+F 2 "" H 6538 3450 50  0001 C CNN
+F 3 "" H 6500 3600 50  0001 C CNN
+	1    6500 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 5BA0C174
+P 6850 3350
+F 0 "C3" H 6875 3450 50  0000 L CNN
+F 1 "100nF" H 6875 3250 50  0000 L CNN
+F 2 "" H 6888 3200 50  0001 C CNN
+F 3 "" H 6850 3350 50  0001 C CNN
+	1    6850 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L R R4
+U 1 1 5BA0C1E3
+P 7200 3600
+F 0 "R4" V 7280 3600 50  0000 C CNN
+F 1 "100K" V 7200 3600 50  0000 C CNN
+F 2 "" V 7130 3600 50  0001 C CNN
+F 3 "" H 7200 3600 50  0001 C CNN
+	1    7200 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 3350 3850 3350
+Wire Wire Line
+	3850 3350 4200 3350
+Wire Wire Line
+	3850 3250 3850 3350
+Wire Wire Line
+	3850 3350 3850 3450
+Connection ~ 3850 3350
+Wire Wire Line
+	6400 3350 6500 3350
+Wire Wire Line
+	6500 3350 6700 3350
+Wire Wire Line
+	6500 3450 6500 3350
+Connection ~ 6500 3350
+Wire Wire Line
+	7000 3350 7200 3350
+Wire Wire Line
+	7200 3350 7750 3350
+Wire Wire Line
+	7200 3350 7200 3450
+Text GLabel 4200 3350 2    60   Input ~ 0
+Pata_A3
+$Comp
+L GNDREF #PWR2
+U 1 1 5BA0C2EA
+P 3850 3950
+F 0 "#PWR2" H 3850 3700 50  0001 C CNN
+F 1 "GNDREF" H 3850 3800 50  0000 C CNN
+F 2 "" H 3850 3950 50  0001 C CNN
+F 3 "" H 3850 3950 50  0001 C CNN
+	1    3850 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDREF #PWR3
+U 1 1 5BA0C30C
+P 6500 3950
+F 0 "#PWR3" H 6500 3700 50  0001 C CNN
+F 1 "GNDREF" H 6500 3800 50  0000 C CNN
+F 2 "" H 6500 3950 50  0001 C CNN
+F 3 "" H 6500 3950 50  0001 C CNN
+	1    6500 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDREF #PWR4
+U 1 1 5BA0C32E
+P 7200 3950
+F 0 "#PWR4" H 7200 3700 50  0001 C CNN
+F 1 "GNDREF" H 7200 3800 50  0000 C CNN
+F 2 "" H 7200 3950 50  0001 C CNN
+F 3 "" H 7200 3950 50  0001 C CNN
+	1    7200 3950
+	1    0    0    -1  
+$EndComp
+Text GLabel 5850 3350 0    60   Input ~ 0
+Pata_9
+Wire Wire Line
+	3850 3950 3850 3750
+Wire Wire Line
+	6500 3950 6500 3750
+Wire Wire Line
+	7200 3950 7200 3750
+Wire Wire Line
+	6100 3350 5850 3350
+Text GLabel 7750 3350 2    60   Input ~ 0
+Salida_tono_500Hz
+Connection ~ 7200 3350
+Text GLabel 3100 3350 0    60   Input ~ 0
+Entrada_audio
+Wire Wire Line
+	3100 3350 3350 3350
+Wire Wire Line
+	3850 2950 3850 2800
+$Comp
+L VCC #PWR1
+U 1 1 5BA0C49E
+P 3850 2800
+F 0 "#PWR1" H 3850 2650 50  0001 C CNN
+F 1 "VCC" H 3850 2950 50  0000 C CNN
+F 2 "" H 3850 2800 50  0001 C CNN
+F 3 "" H 3850 2800 50  0001 C CNN
+	1    3850 2800
+	1    0    0    -1  
+$EndComp
+Text Notes 3850 2850 0    60   ~ 0
+5Vcc
+Wire Notes Line
+	5850 4150 5850 2650
+Wire Notes Line
+	5850 2650 4200 2650
+Wire Notes Line
+	4200 2650 4200 4150
+Wire Notes Line
+	4200 4150 5850 4150
+Text Notes 4750 4000 0    60   ~ 0
+Arduino Micro
+$EndSCHEMATC
