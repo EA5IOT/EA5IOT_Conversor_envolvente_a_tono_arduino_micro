@@ -44,7 +44,7 @@ void setup()
 
   for (Fase = 0; Fase < Puntos; Fase++)
   {
-    Tabla[Fase] = 50*sin((2*PI/Puntos)*Fase);                                  // Senoidal de "Puntos"
+    Tabla[Fase] = 50*sin((2*PI/Puntos)*Fase);                                   // Senoidal de "Puntos"
   };
   Fase = 0;
 
